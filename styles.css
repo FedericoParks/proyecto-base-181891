@@ -102,21 +102,35 @@ header > .contenedor > p {
 nav ul {
     display: flex;
     align-items: center;
-
-    gap: 30px;
+    gap: 12px;
 
     list-style: none;
 }
 
 nav a {
-    font-size: 14px;
-    font-weight: 500;
+    display: inline-block;
 
-    transition: color 0.2s ease;
+    padding: 13px 20px;
+
+    background-color: #6B4F3A;
+    color: #FFFFFF;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
 }
 
 nav a:hover {
-    color: #59634A;
+    background-color: #4F392A;
+    color: #FFFFFF;
+
+    transform: translateY(-2px);
 }
 
 
@@ -547,11 +561,16 @@ footer p:first-child {
     }
 
     nav ul {
-        gap: 18px;
+    gap: 10px;
 
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    padding: 10px 14px;
+    font-size: 13px;
+}
 
     .hero {
         min-height: 600px;
@@ -596,10 +615,10 @@ footer p:first-child {
         gap: 12px;
     }
 
-    nav a {
-        font-size: 12px;
-    }
-
+   nav a {
+    padding: 9px 12px;
+    font-size: 12px;
+}
     .hero {
         min-height: 550px;
     }
