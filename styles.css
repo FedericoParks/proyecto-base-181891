@@ -455,7 +455,8 @@ form {
 }
 
 .campo input,
-.campo textarea {
+.campo textarea,
+.campo select {
     display: block;
 
     width: 100%;
@@ -478,7 +479,8 @@ form {
 }
 
 .campo input:focus,
-.campo textarea:focus {
+.campo textarea:focus,
+.campo select:focus {
     outline: 2px solid #59634A;
 
     border-color: #59634A;
@@ -623,5 +625,96 @@ footer p:first-child {
     .contacto {
         padding-left: 7%;
         padding-right: 7%;
+    }
+}
+
+
+/* =========================
+   MEJORAS DEL FORMULARIO
+========================= */
+
+/* Tarjeta que contiene el formulario */
+.contacto form {
+    background-color: #F8F6F0;
+    padding: 30px;
+    border: 1px solid #D5D0C4;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(62, 51, 40, 0.08);
+}
+
+/* Espacio entre los campos */
+.contacto .campo {
+    margin-bottom: 22px;
+}
+
+/* Etiquetas */
+.contacto .campo label {
+    color: #394333;
+}
+
+/* Opciones de contacto e intereses */
+.contacto fieldset {
+    border: 1px solid #D5D0C4;
+    border-radius: 7px;
+    padding: 18px;
+    margin-bottom: 22px;
+}
+
+/* Títulos de los grupos */
+.contacto legend {
+    color: #394333;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 6px;
+}
+
+/* Separación entre las opciones */
+.contacto fieldset div {
+    margin-bottom: 10px;
+}
+
+.contacto fieldset div:last-child {
+    margin-bottom: 0;
+}
+
+/* Opciones de radio y checkbox */
+.contacto fieldset input[type="radio"],
+.contacto fieldset input[type="checkbox"] {
+    accent-color: #59634A;
+    cursor: pointer;
+}
+
+/* Transición suave en los campos */
+.contacto .campo input,
+.contacto .campo textarea,
+.contacto .campo select {
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+/* Efecto al seleccionar un campo */
+.contacto .campo input:focus,
+.contacto .campo textarea:focus,
+.contacto .campo select:focus {
+    outline: none;
+    border-color: #59634A;
+    box-shadow: 0 0 0 3px rgba(89, 99, 74, 0.15);
+}
+
+/* Botón de envío */
+.contacto form button {
+    border-radius: 6px;
+    padding: 15px;
+    letter-spacing: 0.3px;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 500px) {
+    .contacto form {
+        padding: 20px 16px;
+    }
+
+    .contacto fieldset {
+        padding: 14px;
     }
 }
