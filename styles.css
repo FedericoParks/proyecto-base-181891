@@ -611,14 +611,32 @@ nav a {
         font-size: 24px;
     }
 
-    nav ul {
-        gap: 12px;
+    /* Navegación móvil */
+    nav {
+        width: 100%;
     }
 
-   nav a {
-    padding: 9px 12px;
-    font-size: 12px;
-}
+    nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        padding: 9px 8px;
+
+        font-size: 11px;
+        font-weight: bold;
+
+        white-space: nowrap;
+        border-radius: 6px;
+    }
+
     .hero {
         min-height: 550px;
     }
@@ -633,7 +651,6 @@ nav a {
 
     .hero-boton {
         width: 100%;
-
         text-align: center;
     }
 
